@@ -12,7 +12,7 @@
  *
  * Return: length of the tree printed
  */
-int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
+static int print_tree(const binary_tree_t *tree, int offset, int depth, char **s)
 {
     char node_str[6];
     int node_width, left_width, right_width, is_left_child, i;
